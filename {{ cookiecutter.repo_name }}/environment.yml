@@ -1,0 +1,21 @@
+name: ./{{ cookiecutter.repo_name }}_env
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - numpy
+  - pandas
+  - seaborn
+  - samtools >=1.11
+  - bcftools >=1.11
+  - ipykernel
+  - snakemake-minimal
+  # external requirements
+  - click
+  - coverage
+  - black
+  - python-dotenv>=0.5.1
+  - pip 
+  - pip:
+    - "-e ."
